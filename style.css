@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    margin: 0px;
+    background: linear-gradient(to bottom, #2FACF8, #187FFA);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#body-decorations {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#body-decorations img {
+    position: absolute;
+    opacity: 0.35;
+    user-select: none;
+    z-index: 0;
+}
+
+header, .spongeheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    padding: 5%;
+}
+
+header {
+    background-color: #2FACF8;
+}
+
+.spongeheader {
+    background-color: #FFF316;
+}
+
+body.spongebody {
+    background-color: #AAAC39 ; 
+    background-image: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+a:hover {}
+
+.nav-buttons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.buttonspongebob,
+.buttonpatrick,
+.buttonthaddaeus {
+    display: inline-block;
+    width: 180px;
+    padding: 15px;
+    border: 6px solid;
+    border-radius: 14px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.buttonspongebob {
+
+    background-color: #FFF316;
+    border-color:#AAAC39;
+    color: #627D2B;
+}
+
+.buttonspongebob:hover {
+    background-color: #fffee4;
+    border-color:#b5b6a3;
+    color: #797c71
+}
+
+.buttonpatrick {
+    background-color: #E88F7F;
+    border-color:#D35348;
+    color: #000000;
+} 
+
+.buttonpatrick:hover {
+    background-color: #ead3cf;
+    border-color:#d19b96;
+    color: #909090;
+}
+
+.buttonthaddaeus {
+    background-color: #C2DCD3;
+    border-color:#8EC2B5;
+    color: #0C4F3D;
+}
+
+.buttonthaddaeus:hover {
+    background-color: #e2e3e3;
+    border-color:#bbc4c2;
+    color: #5f716c;
+}
+
+header > p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 26px;
+    font-weight: bolder;
+
+    margin: 0;
+    margin-left: 5%;
+}
+
+header > p img {
+    width: 65px;
+    height: 65px;
+}
+
+header > div {
+    margin-right: 2%;
+}
+
+hr {
+    border: none;
+    border-top: 5px solid #8678CF;
+    margin: 0;
+}
+
+.first-flexbox {
+    display: flex;
+    gap: 75px;
+    padding: 75px;
+    margin: 0;
+    align-items: stretch;
+    padding-bottom: calc(75px / 2);
+}
+
+.second-flexbox {
+    display: flex;
+    gap: 75px;
+    padding: 75px;
+    margin: 0;
+    padding-top: calc(75px / 2);
+}
+
+.first-flexbox > div:first-child > img {
+    width: 100%;
+    max-width: none;
+    border: 5px solid #8678CF;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.first-flexbox > div:first-child {
+    width: calc((100% - 75px) / 2);
+}
+
+.second-flexbox > img {
+    width: calc((100% - 75px) / 2);
+    max-width: none;
+    border: 5px solid #8678CF;
+    position: relative;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.text-box {
+    width: calc((100% - 75px) / 2);
+    max-width: none;
+    border: 5px solid #8678CF;
+    font-size: 1.15vw;
+    line-height: 1.35;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    padding: 4%;
+    background-color:  #556F66;
+    z-index: 3;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-map {
+    position: relative;
+    width: 100%;
+    top: 40px;
+    z-index: 4;
+}
+
+.bottom-img {
+    width: 100%;
+    position: relative;
+    top:40px;
+    display: block;
+    z-index: 4;
+}
+
+.house-link {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    background-color: white;
+
+    margin-left: 5px;
+    margin-top: 425px;
+}
+
+.spongebob-link {
+    left: 82.84%;
+    top: 64.26%;
+}
+
+.patrick-link {
+    left: 28.12%;
+    top: 63.18%;
+}
+
+.thaddaeus-link {
+    left: 56.75%;
+    top: 65.88%;
+
+    margin-top: 400px;
+}
+
+.footer-hint {
+    font-size: 1.1vw;
+    line-height: 1.3;
+    font-weight: bold;
+
+    display: flex;
+    gap: 20px;
+}
+
+.footer-hint > div:first-child,
+.footer-hint > div:last-child {
+    font-size: 2.30vw;
+    line-height: 0.3;
+    font-weight: bold;
+}
+
+.spongebob-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 100px;
+}
+
+.only-sponge {
+    position: relative;
+} 
+
+.only-sponge img:first-child {
+    width: 100%;
+    display: block;
+}
+
+.only-sponge img:last-child {
+    position: absolute;
+    width: 180px;
+    top: 20px;
+    left: 220px;
+    z-index: 2;
+}
