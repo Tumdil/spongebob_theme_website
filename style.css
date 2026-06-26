@@ -37,7 +37,7 @@ body {
     font-weight: bold;
 }
 
-header, .spongeheader {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,6 +67,15 @@ body.spongebody {
 
 body.patbody {
     background-color: #D35348 ; 
+    background-image: none;
+}
+
+.thaddheader {
+    background-color: #8EC2B5 ;
+}
+
+body.thaddbody {
+    background-color:  #0C4F3D ; 
     background-image: none;
 }
 
@@ -239,7 +248,7 @@ footer {
 .bottom-img {
     width: 100%;
     position: relative;
-    top:40px;
+    top:0px;
     display: block;
     z-index: 4;
 }
@@ -255,7 +264,6 @@ footer {
     background-color: white;
 
     margin-left: 5px;
-    margin-top: 625px;
 }
 
 .spongebob-link {
@@ -271,8 +279,6 @@ footer {
 .thaddaeus-link {
     left: 56.75%;
     top: 65.88%;
-
-    margin-top: 550px;
 }
 
 .footer-hint {
@@ -299,19 +305,37 @@ footer {
     margin: 100px;
 }
 
-.only-sponge {
+.only-sponge, 
+.only-pat,
+.only-thadd {
     position: relative;
 } 
 
-.only-sponge img:first-child {
+.only-sponge img:first-child, 
+.only-pat img:first-child,
+.only-thadd img:first-child {
     width: 100%;
     display: block;
 }
 
-.only-sponge img:last-child {
+.only-thadd img:first-child {
+    margin-top: 50px;
+}
+
+.only-sponge img:last-child,
+.only-pat img:last-child,
+.only-thadd img:last-child {
     position: absolute;
     width: 180px;
     top: 20px;
     left: 220px;
     z-index: 2;
+}
+
+.only-pat img:last-child {
+    top: -30px;
+}
+
+.only-thadd img:last-child {
+    top: -70px;
 }
