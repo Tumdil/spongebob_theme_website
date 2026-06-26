@@ -137,6 +137,12 @@ a:hover {}
     color: #0C4F3D;
 }
 
+.thaddbtncolorswitch {
+    background-color: #C2DCD3;
+    border-color:#0C4F3D; 
+    color: #8EC2B5;
+}
+
 .buttonthaddaeus:hover {
     background-color: #e2e3e3;
     border-color:#bbc4c2;
