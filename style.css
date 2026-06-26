@@ -345,3 +345,7 @@ footer {
 .only-thadd img:last-child {
     top: -70px;
 }
+
+.link-in-text:hover {
+    color:#8678CF;
+}
