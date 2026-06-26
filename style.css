@@ -61,6 +61,15 @@ body.spongebody {
     background-image: none;
 }
 
+.patheader {
+    background-color: #E88F7F ;
+}
+
+body.patbody {
+    background-color: #D35348 ; 
+    background-image: none;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
